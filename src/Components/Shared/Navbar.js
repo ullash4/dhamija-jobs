@@ -28,7 +28,7 @@ function Navbar() {
   );
 
   return (
-    <div className="navbar bg-base-300 lg:px-20">
+    <div className="navbar bg-[#8BB9C1] text-white lg:px-20">
       <div className="navbar-start">
         <div className="dropdown">
           <label tabindex="0" className="btn btn-ghost lg:hidden">
@@ -72,10 +72,10 @@ function Navbar() {
           >
             
             <li>
-              <p>{name}</p>
+              <p className="text-black">{name}</p>
             </li>
             <li>
-              <p>{college}</p>
+              <p className="text-black">{college}</p>
             </li>
             <li>
               <a href="T" className="bg-primary text-white">Sign Out</a>
