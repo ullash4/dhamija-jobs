@@ -1,7 +1,18 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 
 function Navbar() {
+  const [profile, setProfile] = useState([])
+  useEffect(()=>{
+    fetch('http://localhost:5000/profile')
+    .then(res=>res.json())
+    .then(data=>{
+      setProfile(data[0])
+      console.log(data);
+    })
+  },[])
+  const {pictureUrl, college, name}=profile;
+  console.log(profile);
   const navItems = (
     <>
       <li>
@@ -52,24 +63,22 @@ function Navbar() {
         <div className="dropdown dropdown-end">
           <label tabindex="0" className="btn btn-ghost btn-circle avatar">
             <div className="w-10 rounded-full">
-              <img src="https://api.lorem.space/image/face?hash=33791" alt="" />
+              <img src={pictureUrl} alt="" />
             </div>
           </label>
           <ul
             tabindex="0"
-            className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52"
+            className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52 gap-2"
           >
+            
             <li>
-              <a className="justify-between">
-                Profile
-                <span className="badge">New</span>
-              </a>
+              <p>{name}</p>
             </li>
             <li>
-              <a>Settings</a>
+              <p>{college}</p>
             </li>
             <li>
-              <a>Logout</a>
+              <a href="T" className="bg-primary text-white">Sign Out</a>
             </li>
           </ul>
         </div>
