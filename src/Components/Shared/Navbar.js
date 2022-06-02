@@ -5,7 +5,7 @@ function Navbar() {
   const navItems = (
     <>
       <li>
-        <NavLink to={'/brousejobs'}>Browse Jobs</NavLink>
+        <NavLink to={'/findjobs'}>Find Jobs</NavLink>
       </li>
       <li>
         <NavLink to={'/about'}>About Us</NavLink>
