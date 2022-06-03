@@ -3,33 +3,36 @@ import background from "../../assets/background.png";
 
 function About() {
   return (
-    <section class="bg-white h-screen dark:bg-gray-800 grid grid-cols-1 justify-center items-center lg:px-20">
-      <div class="container px-6 py-8 mx-auto">
-        <div class="items-center lg:flex">
-          <div class="lg:w-1/2">
-            <h2 class="text-3xl font-bold text-gray-800 dark:text-gray-100">
+    <section className="bg-white h-screen dark:bg-gray-800 grid grid-cols-1 justify-center items-center lg:px-20">
+      <div className="container px-6 py-8 mx-auto">
+        <div className="items-center lg:flex">
+          <div className="lg:w-1/2">
+            <h2 className="text-3xl font-bold text-gray-800 dark:text-gray-100">
               How works Dhamija Jobs Organization
             </h2>
 
-            <p class="mt-4 text-gray-500 dark:text-gray-400 lg:max-w-md">
+            <p className="mt-4 text-gray-500 dark:text-gray-400 lg:max-w-md">
               Well{" "}
-              <a class="font-bold text-blue-600 dark:text-blue-400" href="t">
+              <a
+                className="font-bold text-blue-600 dark:text-blue-400"
+                href="t"
+              >
                 Dhamija Jobs
               </a>{" "}
               is a best place for freashers and experienced people. Who know
               coding and many more skills. We help to get their jobs.
             </p>
 
-            <div class="flex items-center mt-6 -mx-2">
+            <div className="flex items-center mt-6 -mx-2">
               <a
-                class="mx-2"
+                className="mx-2"
                 href="https://www.facebook.com/BigBoyUllash/"
                 target="_blank"
                 rel="noreferrer"
                 aria-label="Facebook"
               >
                 <svg
-                  class="w-5 h-5 text-gray-700 fill-current dark:text-gray-200 hover:text-gray-600 dark:hover:text-gray-400"
+                  className="w-5 h-5 text-gray-700 fill-current dark:text-gray-200 hover:text-gray-600 dark:hover:text-gray-400"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 512 512"
                 >
@@ -38,14 +41,14 @@ function About() {
               </a>
 
               <a
-                class="mx-2"
+                className="mx-2"
                 href="https://www.linkedin.com/in/imran-mahmud-ullash-561940235/"
                 target="_blank"
                 rel="noreferrer"
                 aria-label="Linkden"
               >
                 <svg
-                  class="w-5 h-5 text-gray-700 fill-current dark:text-gray-200 hover:text-gray-600 dark:hover:text-gray-400"
+                  className="w-5 h-5 text-gray-700 fill-current dark:text-gray-200 hover:text-gray-600 dark:hover:text-gray-400"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 512 512"
                 >
@@ -54,14 +57,14 @@ function About() {
               </a>
 
               <a
-                class="mx-2"
+                className="mx-2"
                 href="https://github.com/ullash4"
                 target="_blank"
                 rel="noreferrer"
                 aria-label="Github"
               >
                 <svg
-                  class="w-5 h-5 text-gray-700 fill-current dark:text-gray-200 hover:text-gray-600 dark:hover:text-gray-400"
+                  className="w-5 h-5 text-gray-700 fill-current dark:text-gray-200 hover:text-gray-600 dark:hover:text-gray-400"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 512 512"
                 >
@@ -71,11 +74,11 @@ function About() {
             </div>
           </div>
 
-          <div class="mt-8 lg:mt-0 lg:w-1/2">
-            <div class="flex items-center justify-center lg:justify-end">
-              <div class="max-w-lg">
+          <div className="mt-8 lg:mt-0 lg:w-1/2">
+            <div className="flex items-center justify-center lg:justify-end">
+              <div className="max-w-lg">
                 <img
-                  class="object-cover object-center w-full h-64 rounded-md "
+                  className="object-cover object-center w-full h-64 rounded-md "
                   src={background}
                   alt=""
                 />
@@ -85,35 +88,35 @@ function About() {
         </div>
       </div>
 
-      <section class="md:flex flex-col max-w-4xl mx-auto overflow-hidden bg-white rounded-lg md:h-48 shadow-xl  md:flex-row hidden">
-        <div class="md:flex md:items-center md:justify-center md:w-1/2 md:bg-gray-700 ">
-          <div class="px-6 py-6 md:px-8 md:py-0">
-            <h2 class="text-lg font-bold text-gray-700 dark:text-white md:text-gray-100">
+      <section className="md:flex flex-col max-w-4xl mx-auto overflow-hidden bg-white rounded-lg md:h-48 shadow-xl  md:flex-row hidden">
+        <div className="md:flex md:items-center md:justify-center md:w-1/2 md:bg-gray-700 ">
+          <div className="px-6 py-6 md:px-8 md:py-0">
+            <h2 className="text-lg font-bold text-gray-700 dark:text-white md:text-gray-100">
               Sign Up For{" "}
-              <span class="text-blue-600 dark:text-blue-400 md:text-blue-300">
+              <span className="text-blue-600 dark:text-blue-400 md:text-blue-300">
                 Jobs
               </span>{" "}
               Updates
             </h2>
 
-            <p class="mt-2 text-sm text-white ">
+            <p className="mt-2 text-sm text-white ">
               Subscribe Dhamija Jobs to get notifications to your email
             </p>
           </div>
         </div>
 
-        <div class="flex items-center justify-center pb-6 md:py-0 md:w-1/2">
+        <div className="flex items-center justify-center pb-6 md:py-0 md:w-1/2">
           <form>
-            <div class="flex flex-col p-1 overflow-hidden border rounded-lg dark:border-gray-600 lg:flex-row dark:focus-within:border-blue-300 focus-within:ring focus-within:ring-opacity-40 focus-within:border-blue-400 focus-within:ring-blue-300">
+            <div className="flex flex-col p-1 overflow-hidden border rounded-lg dark:border-gray-600 lg:flex-row dark:focus-within:border-blue-300 focus-within:ring focus-within:ring-opacity-40 focus-within:border-blue-400 focus-within:ring-blue-300">
               <input
-                class="px-6 py-2 text-gray-700 placeholder-gray-500 bg-white outline-none dark:bg-gray-800 dark:placeholder-gray-400 focus:placeholder-transparent dark:focus:placeholder-transparent"
+                className="px-6 py-2 text-gray-700 placeholder-gray-500 bg-white outline-none dark:bg-gray-800 dark:placeholder-gray-400 focus:placeholder-transparent dark:focus:placeholder-transparent"
                 type="text"
                 name="email"
                 placeholder="Enter your email"
                 aria-label="Enter your email"
               />
 
-              <button class="px-4 py-3 text-sm font-medium tracking-wider text-gray-100 uppercase transition-colors duration-200 transform bg-gray-700 rounded-lg hover:bg-gray-600 focus:bg-gray-600 focus:outline-none">
+              <button className="px-4 py-3 text-sm font-medium tracking-wider text-gray-100 uppercase transition-colors duration-200 transform bg-gray-700 rounded-lg hover:bg-gray-600 focus:bg-gray-600 focus:outline-none">
                 subscribe
               </button>
             </div>
