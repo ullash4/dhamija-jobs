@@ -17,11 +17,11 @@ function Home() {
   return (
     <div class="hero min-h-screen ">
   <div class="hero-content flex-col lg:flex-row-reverse">
-    <img src={background2} class="w-[494px] h-[355px] rounded-lg " alt='' />
-    <div>
-      <h1 class="text-5xl font-bold">Welcome to Dhamija Jobs</h1>
-      <p class="py-6">Dhamija Jobs is a Indian website where  experienced or freashers can find there dream jobs.</p>
-      <Link to={'/findjobs'} class="btn btn-primary">Find Jobs</Link>
+    <img data-aos="zoom-out-left"  data-aos-duration="1000" src={background2} class="w-[494px] h-[355px] rounded-lg " alt='' />
+    <div >
+      <h1 data-aos="zoom-out-right"  data-aos-duration="1000" class="text-5xl font-bold">Welcome to Dhamija Jobs</h1>
+      <p data-aos="zoom-out-right"   data-aos-duration="1000" class="py-6">Dhamija Jobs is a Indian website where  experienced or freashers can find there dream jobs.</p>
+      <Link data-aos="zoom-in" data-aos-duration="2000"  data-aos-delay="300" to={'/findjobs'} class="btn btn-primary">Find Jobs</Link>
     </div>
   </div>
 </div>

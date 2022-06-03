@@ -9,7 +9,9 @@ function JobRow({job}) {
         exprience= <span className='text-primary'>Exprienced</span>
     }
   return (
-    <div class="card lg:max-w-lg bg-base-100 shadow-xl">
+    <div class="card lg:max-w-lg bg-base-100 shadow-xl" data-aos="flip-left"
+    data-aos-easing="ease-out-cubic"
+    data-aos-duration="2000">
   <div class="card-body">
     <h2 class="text-3xl font-semibold text-center">{designation}</h2>
     <p className='font-medium'><span className='text-xl'>Company: </span> {company}</p>

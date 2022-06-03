@@ -4,7 +4,7 @@ import { Link, NavLink } from "react-router-dom";
 function Navbar() {
   const [profile, setProfile] = useState([])
   useEffect(()=>{
-    fetch('http://localhost:5000/profile')
+    fetch('https://damp-forest-59318.herokuapp.com/profile')
     .then(res=>res.json())
     .then(data=>{
       setProfile(data[0])
@@ -49,7 +49,7 @@ function Navbar() {
           </label>
           <ul
             tabindex="0"
-            className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52 gap-2"
+            className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52 gap-2 text-black"
           >
             {navItems}
           </ul>

@@ -6,7 +6,7 @@ function Jobs() {
   const [jobs, setJobs] = useState([])
   const [isLoading, setLoading]= useState(true)
   useEffect(()=>{
-    fetch('http://localhost:5000/jobs')
+    fetch('https://damp-forest-59318.herokuapp.com/jobs')
     .then(res=>res.json())
     .then(data=>{
       setJobs(data)

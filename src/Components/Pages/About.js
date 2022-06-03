@@ -85,7 +85,7 @@ function About() {
         </div>
       </div>
 
-      <section class="flex flex-col max-w-4xl mx-auto overflow-hidden bg-white rounded-lg shadow-xl  md:flex-row md:h-48">
+      <section class="md:flex flex-col max-w-4xl mx-auto overflow-hidden bg-white rounded-lg md:h-48 shadow-xl  md:flex-row hidden">
         <div class="md:flex md:items-center md:justify-center md:w-1/2 md:bg-gray-700 ">
           <div class="px-6 py-6 md:px-8 md:py-0">
             <h2 class="text-lg font-bold text-gray-700 dark:text-white md:text-gray-100">
